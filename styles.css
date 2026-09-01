@@ -396,6 +396,18 @@ textarea:focus-visible {
   margin-bottom: 0;
 }
 
+.prose a {
+  color: #2f7f42;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.prose a:hover,
+.prose a:focus-visible {
+  color: var(--navy);
+}
+
 .editor-panel {
   margin-top: 22px;
   background: #f3f8f2;

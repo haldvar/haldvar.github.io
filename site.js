@@ -6,7 +6,7 @@ const ALLOWED_PAGES = new Set([
   "oppgavebeskrivelse.html",
   "prosjektdagbok.html",
   "om-meg.html",
-  "om-elefun.html",
+  "praksisstedet.html",
   "status-1.html",
   "status-2.html",
   "avsluttende-refleksjon.html",
@@ -134,7 +134,7 @@ const setupEditor = () => {
     } catch {
       localStorage.removeItem(storageKey);
     }
-    return { title: defaultTitle, body: defaultBody };
+    return null;
   };
 
   const updateView = ({ title, body }) => {
@@ -142,8 +142,9 @@ const setupEditor = () => {
     renderParagraphs(viewBody, body);
   };
 
-  const current = readSavedContent();
-  updateView(current);
+  const savedContent = readSavedContent();
+  const current = savedContent ?? { title: defaultTitle, body: defaultBody };
+  if (savedContent) updateView(savedContent);
   titleInput.value = current.title;
   bodyInput.value = current.body;
 
