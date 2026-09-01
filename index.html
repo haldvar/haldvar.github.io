@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Praksisprosjekt ved UiA: utvikling av PlukkeFun, et nytt internt plukkesystem for lageret hos Elefun."
+    />
+    <meta name="theme-color" content="#182e3d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="nb_NO" />
+    <meta property="og:title" content="Praksis hos Elefun · PlukkeFun" />
+    <meta
+      property="og:description"
+      content="Vi utvikler et enklere og mer oversiktlig plukkesystem for lageret hos Elefun."
+    />
+    <meta
+      property="og:image"
+      content="https://haldvar.github.io/praksis-elefun/assets/og.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Praksis hos Elefun · PlukkeFun" />
+    <meta
+      name="twitter:description"
+      content="Vi utvikler et enklere og mer oversiktlig plukkesystem for lageret hos Elefun."
+    />
+    <meta
+      name="twitter:image"
+      content="https://haldvar.github.io/praksis-elefun/assets/og.png"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Praksis hos Elefun · PlukkeFun</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#topp" aria-label="PlukkeFun – til toppen">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span class="brand-name">Plukke<span>Fun</span></span>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="hovedmeny"
+      >
+        <span class="sr-only">Åpne meny</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="hovedmeny" class="site-nav" aria-label="Hovedmeny">
+        <a href="#oppgaven">Oppgaven</a>
+        <a href="#arbeidet">Arbeidet</a>
+        <a href="#prosessen">Prosessen</a>
+        <a class="nav-cta" href="#kontakt"
+          >Kontakt <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main id="innhold">
+      <section class="hero section-shell" id="topp">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> UiA praksisprosjekt · 2026</p>
+          <h1>Fra plukkliste<br />til <em>flyt.</em></h1>
+          <p class="hero-intro">
+            Vi utvikler <strong>PlukkeFun</strong> – et nytt internt
+            plukkesystem som skal gjøre lagerarbeidet hos Elefun enklere,
+            tydeligere og mer effektivt.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#oppgaven">
+              Se oppgaven
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M5 10h10M11 6l4 4-4 4" />
+              </svg>
+            </a>
+            <a class="text-link" href="#prosessen"
+              >Følg prosessen <span aria-hidden="true">↓</span></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="workflow-card reveal"
+          aria-label="Illustrasjon av plukkeflyten"
+        >
+          <div class="workflow-topline">
+            <div>
+              <span class="mini-label">Aktiv plukkrute</span>
+              <strong>Ordre #10428</strong>
+            </div>
+            <span class="status"><i></i> Pågår</span>
+          </div>
+
+          <div class="progress-track" aria-hidden="true"><span></span></div>
+          <div class="progress-meta">
+            <span>8 av 12 varer</span><span>67 %</span>
+          </div>
+
+          <div class="pick-item pick-item-active">
+            <span class="pick-number">08</span>
+            <div><small>Neste plassering</small><strong>A-14-03</strong></div>
+            <span class="pick-arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="pick-item">
+            <span class="pick-number">09</span>
+            <div><small>Deretter</small><strong>B-02-11</strong></div>
+            <span class="pick-arrow" aria-hidden="true">→</span>
+          </div>
+
+          <div class="card-footer">
+            <span>Rute optimalisert</span>
+            <span class="route-dots" aria-hidden="true"
+              ><i></i><i></i><i></i><i></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span>Utforsk</span><i></i>
+        </div>
+      </section>
+
+      <section class="intro section-shell" id="oppgaven">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark"><span></span> Oppgavebeskrivelse</p>
+          <h2>Et arbeidsverktøy laget<br />for dem som <em>bruker det.</em></h2>
+        </div>
+
+        <div class="brief-grid reveal">
+          <p class="brief-lead">Kort fortalt</p>
+          <div class="brief-copy">
+            <p>
+              I praksisperioden skal vi designe og utvikle PlukkeFun, en
+              nettbasert løsning for plukking av ordre på Elefuns lager.
+              Systemet skal gi lageransatte en tydelig arbeidsflyt fra skanning
+              av ordre til ferdig plukk, og støtte håndtering av avvik
+              underveis.
+            </p>
+            <p>
+              Arbeidet omfatter kartlegging av behov, utforming av
+              brukergrensesnitt, utvikling av frontend og backend, og løpende
+              testing sammen med brukerne. Løsningen utvikles trinnvis etter
+              hvert som vi lærer mer om den faktiske arbeidshverdagen på
+              lageret.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section-shell" id="arbeidet">
+        <div class="section-heading light reveal">
+          <p class="eyebrow"><span></span> Dette skal vi jobbe med</p>
+          <h2>Tre spor.<br />Én bedre <em>flyt.</em></h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card reveal">
+            <div class="card-index">01</div>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M7 9h18M7 16h12M7 23h8" />
+                <circle cx="24" cy="22" r="4" />
+              </svg>
+            </div>
+            <h3>Forstå lageret</h3>
+            <p>
+              Vi kartlegger dagens plukkeflyt, flaskehalser og behov sammen med
+              dem som gjør jobben.
+            </p>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="card-index">02</div>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <rect x="5" y="6" width="22" height="20" rx="3" />
+                <path d="M10 12h12M10 17h8M10 22h5" />
+              </svg>
+            </div>
+            <h3>Bygge løsningen</h3>
+            <p>
+              Vi utvikler et brukervennlig grensesnitt og den tekniske
+              plattformen som ligger bak.
+            </p>
+          </article>
+
+          <article class="work-card reveal">
+            <div class="card-index">03</div>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M25 11a10 10 0 1 0 1 8" />
+                <path d="M25 5v6h-6" />
+                <path d="m12 16 3 3 6-7" />
+              </svg>
+            </div>
+            <h3>Teste og forbedre</h3>
+            <p>
+              Vi prøver ut løsningene i praksis, samler tilbakemeldinger og
+              justerer underveis.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process section-shell" id="prosessen">
+        <div class="process-heading reveal">
+          <p class="eyebrow dark"><span></span> Prosessen</p>
+          <h2>Bygg. Test.<br /><em>Lær.</em></h2>
+          <p>
+            Prosjektet er i utvikling. Her oppdateres framdriften etter hvert
+            som vi går fra innsikt til en løsning som kan prøves i den virkelige
+            arbeidshverdagen.
+          </p>
+        </div>
+
+        <ol class="timeline reveal">
+          <li class="is-done">
+            <span class="timeline-marker"></span>
+            <div class="timeline-copy">
+              <small>August</small>
+              <h3>Innsikt og avgrensning</h3>
+              <p>Forstå behov, mål og dagens lagerflyt.</p>
+            </div>
+            <span class="timeline-status">Gjennomført</span>
+          </li>
+          <li class="is-active">
+            <span class="timeline-marker"></span>
+            <div class="timeline-copy">
+              <small>September</small>
+              <h3>Prototype og utvikling</h3>
+              <p>Bygge kjerneflyten og teste de viktigste valgene.</p>
+            </div>
+            <span class="timeline-status">Pågår nå</span>
+          </li>
+          <li>
+            <span class="timeline-marker"></span>
+            <div class="timeline-copy">
+              <small>Videre</small>
+              <h3>Utprøving og forbedring</h3>
+              <p>Teste på lageret, lære og gjøre løsningen skarpere.</p>
+            </div>
+            <span class="timeline-status">Neste steg</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="contact section-shell" id="kontakt">
+        <div class="contact-panel reveal">
+          <p class="eyebrow"><span></span> Kontakt og lenker</p>
+          <h2>Nysgjerrig på<br /><em>PlukkeFun?</em></h2>
+          <p class="contact-copy">
+            Siden er laget for å dele arbeidet med UiA, medstudenter og andre
+            som følger praksisprosjektet.
+          </p>
+          <div class="contact-links">
+            <a
+              href="https://www.elefun.no/info/hvemervi.aspx"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Om Elefun <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://www.uia.no/" target="_blank" rel="noreferrer">
+              Universitetet i Agder <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              href="https://github.com/haldvar/praksis-elefun"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Prosjektet på GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#topp">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span class="brand-name">Plukke<span>Fun</span></span>
+      </a>
+      <p>UiA praksisprosjekt · <span data-year>2026</span></p>
+      <p>Studentarbeid – ikke en offisiell side for Elefun.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
