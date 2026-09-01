@@ -1,5 +1,5 @@
 # Praksis hos Elefun
 
-En minimalistisk nettside for UiA-praksisprosjektet PlukkeFun. Siden beskriver kort hva prosjektet går ut på og gjør arbeidet tilgjengelig for UiA, medstudenter og andre interesserte.
+En enkel og minimalistisk forside for UiA-praksisprosjektet PlukkeFun. Siden beskriver kort hva prosjektet går ut på og samler inngangene til oppgavebeskrivelse, prosjektdagbok, statusrapporter og avsluttende refleksjon.
 
 Publisert med GitHub Pages.
