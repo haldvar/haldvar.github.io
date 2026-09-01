@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Oppgavebeskrivelse for praksisprosjektet PlukkeFun hos Elefun."
+    />
+    <meta name="theme-color" content="#182e3d" />
+    <meta
+      property="og:title"
+      content="Oppgavebeskrivelse · Praksis hos Elefun"
+    />
+    <meta
+      property="og:description"
+      content="Hva praksisprosjektet PlukkeFun går ut på."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Oppgavebeskrivelse · Praksis hos Elefun</title>
+  </head>
+  <body class="detail-page" data-page="oppgavebeskrivelse">
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="PlukkeFun – til forsiden">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Plukke<strong>Fun</strong></span>
+      </a>
+      <div class="header-actions">
+        <a class="header-link" href="index.html">Forside</a>
+        <a class="header-link" href="login.html" data-auth-link
+          >Logg inn for å redigere</a
+        >
+      </div>
+    </header>
+    <main id="innhold">
+      <section class="page-hero">
+        <div class="page-shell">
+          <p class="eyebrow">Praksisprosjekt · IS-302</p>
+          <h1>Oppgavebeskrivelse</h1>
+          <p class="page-lead">
+            Hva prosjektet går ut på, og hvilke oppgaver som skal løses.
+          </p>
+        </div>
+      </section>
+      <section class="page-content">
+        <div class="page-shell">
+          <article class="content-panel">
+            <h2 data-view-title>Utvikling av PlukkeFun</h2>
+            <div class="prose" data-view-body>
+              <p>
+                Oppgaven er å utvikle PlukkeFun, et nettbasert verktøy for
+                plukking av ordre på Elefuns lager. Løsningen skal gi
+                lageransatte en tydelig arbeidsflyt fra skanning av ordre til
+                ferdig plukk, og støtte håndtering av avvik underveis.
+              </p>
+              <p>
+                Arbeidet omfatter kartlegging av behov, utforming av
+                brukergrensesnitt og utvikling av frontend og backend. Løsningen
+                testes og forbedres løpende i samarbeid med brukerne.
+              </p>
+            </div>
+          </article>
+          <section class="editor-panel" data-editor hidden>
+            <p class="eyebrow dark">Rediger lokal kladd</p>
+            <form data-editor-form novalidate>
+              <div class="field">
+                <label for="editor-title">Tittel</label
+                ><input id="editor-title" type="text" required />
+              </div>
+              <div class="field">
+                <label for="editor-body">Innhold</label
+                ><textarea id="editor-body" rows="14" required></textarea>
+              </div>
+              <div class="editor-actions">
+                <button class="primary-button" type="submit">
+                  Lagre kladd
+                </button>
+                <button class="secondary-button" type="button" data-reset>
+                  Tilbakestill
+                </button>
+              </div>
+              <p
+                class="form-message"
+                data-editor-message
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+            <p class="storage-note">
+              Kladden lagres bare i denne nettleseren og publiseres ikke
+              automatisk.
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>PlukkeFun · UiA praksisprosjekt 2026</p>
+      <p>Studentarbeid – ikke en offisiell side for Elefun.</p>
+    </footer>
+    <script src="site.js" defer></script>
+  </body>
+</html>

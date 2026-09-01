@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Logg inn for å redigere lokale kladder på praksissiden."
+    />
+    <meta name="theme-color" content="#182e3d" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Logg inn · Praksis hos Elefun</title>
+  </head>
+  <body class="login-page">
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="PlukkeFun – til forsiden">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Plukke<strong>Fun</strong></span>
+      </a>
+      <div class="header-actions">
+        <a class="header-link" href="index.html">Til forsiden</a>
+      </div>
+    </header>
+
+    <main id="innhold" class="login-main">
+      <section class="login-card" aria-labelledby="login-title">
+        <p class="eyebrow dark">Redigeringsmodus</p>
+        <h1 id="login-title">Logg inn</h1>
+        <p class="login-intro">
+          Logg inn for å skrive og lagre kladder på de forskjellige
+          prosjektsidene.
+        </p>
+
+        <form class="login-form" data-login-form novalidate>
+          <div class="field">
+            <label for="username">Brukernavn</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              autocomplete="username"
+              required
+              minlength="3"
+            />
+          </div>
+          <div class="field">
+            <label for="password">Passord</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              minlength="8"
+            />
+          </div>
+          <button class="primary-button" type="submit">Logg inn</button>
+          <p
+            class="form-message"
+            data-form-message
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+
+        <p class="storage-note">
+          Dette er en enkel kladdeløsning for GitHub Pages. Innholdet lagres
+          bare i nettleseren du bruker og publiseres ikke automatisk.
+        </p>
+      </section>
+    </main>
+    <script src="site.js" defer></script>
+  </body>
+</html>

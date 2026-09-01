@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Andre statusrapport for praksisprosjektet PlukkeFun."
+    />
+    <meta name="theme-color" content="#182e3d" />
+    <meta property="og:title" content="Status 2 · Praksis hos Elefun" />
+    <meta
+      property="og:description"
+      content="Andre statusrapport fra praksisprosjektet."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Status 2 · Praksis hos Elefun</title>
+  </head>
+  <body class="detail-page" data-page="status-2">
+    <a class="skip-link" href="#innhold">Hopp til innhold</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="PlukkeFun – til forsiden"
+        ><span class="brand-mark" aria-hidden="true">P</span
+        ><span>Plukke<strong>Fun</strong></span></a
+      >
+      <div class="header-actions">
+        <a class="header-link" href="index.html">Forside</a
+        ><a class="header-link" href="login.html" data-auth-link
+          >Logg inn for å redigere</a
+        >
+      </div>
+    </header>
+    <main id="innhold">
+      <section class="page-hero">
+        <div class="page-shell">
+          <p class="eyebrow">Praksisprosjekt · IS-302</p>
+          <h1>Status 2</h1>
+          <p class="page-lead">Andre statusrapport fra praksisperioden.</p>
+        </div>
+      </section>
+      <section class="page-content">
+        <div class="page-shell">
+          <article class="content-panel">
+            <h2 data-view-title>Andre statusrapport</h2>
+            <div class="prose" data-view-body>
+              <p>Denne siden fylles ut når andre statusrapport er klar.</p>
+              <p>
+                Rapporten kan beskrive framdrift, endringer i planen, erfaringer
+                så langt og hva som gjenstår før prosjektet avsluttes.
+              </p>
+            </div>
+          </article>
+          <section class="editor-panel" data-editor hidden>
+            <p class="eyebrow dark">Rediger lokal kladd</p>
+            <form data-editor-form novalidate>
+              <div class="field">
+                <label for="editor-title">Tittel</label
+                ><input id="editor-title" type="text" required />
+              </div>
+              <div class="field">
+                <label for="editor-body">Innhold</label
+                ><textarea id="editor-body" rows="14" required></textarea>
+              </div>
+              <div class="editor-actions">
+                <button class="primary-button" type="submit">Lagre kladd</button
+                ><button class="secondary-button" type="button" data-reset>
+                  Tilbakestill
+                </button>
+              </div>
+              <p
+                class="form-message"
+                data-editor-message
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+            <p class="storage-note">
+              Kladden lagres bare i denne nettleseren og publiseres ikke
+              automatisk.
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>PlukkeFun · UiA praksisprosjekt 2026</p>
+      <p>Studentarbeid – ikke en offisiell side for Elefun.</p>
+    </footer>
+    <script src="site.js" defer></script>
+  </body>
+</html>
