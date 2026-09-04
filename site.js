@@ -123,7 +123,7 @@ const setupEditor = () => {
   const resetButton = form.querySelector("[data-reset]");
   const storageKey = `plukkefun_content_${page}`;
   const defaultTitle = viewTitle.textContent.trim();
-  const defaultBody = [...viewBody.querySelectorAll("p")]
+  const defaultBody = [...viewBody.querySelectorAll("h3, p")]
     .map((paragraph) => paragraph.textContent.trim())
     .join("\n\n");
 
