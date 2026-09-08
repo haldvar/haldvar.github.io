@@ -381,6 +381,42 @@ h1 em {
   max-width: 730px;
 }
 
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 280px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(30px, 5vw, 52px);
+}
+
+.profile-photo {
+  margin: 0;
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(24, 46, 61, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 18px 42px rgba(16, 38, 50, 0.12);
+}
+
+.profile-copy {
+  max-width: none;
+}
+
+.profile-contact {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.profile-contact p:first-child {
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-weight: 750;
+}
+
 .prose p {
   margin-bottom: 22px;
   color: #43515a;
@@ -437,6 +473,17 @@ footer p {
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    width: min(100%, 360px);
+    margin: 0 auto;
   }
 }
 
