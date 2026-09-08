@@ -327,11 +327,7 @@ h1 em {
 }
 
 .card:focus-visible,
-.header-link:focus-visible,
-.primary-button:focus-visible,
-.secondary-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
+.header-link:focus-visible {
   outline: 3px solid rgba(117, 200, 132, 0.42);
   outline-offset: 3px;
 }
@@ -364,8 +360,7 @@ textarea:focus-visible {
   padding: 78px 24px 110px;
 }
 
-.content-panel,
-.editor-panel {
+.content-panel {
   padding: clamp(30px, 5vw, 58px);
   background: #fff;
   border: 1px solid var(--line);
@@ -422,129 +417,6 @@ textarea:focus-visible {
   color: var(--navy);
 }
 
-.editor-panel {
-  margin-top: 22px;
-  background: #f3f8f2;
-  border-color: rgba(76, 170, 96, 0.25);
-}
-
-.editor-panel[hidden] {
-  display: none;
-}
-
-.field {
-  display: grid;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.field label {
-  font-size: 13px;
-  font-weight: 750;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 14px 15px;
-  color: var(--ink);
-  background: #fff;
-  border: 1px solid rgba(24, 46, 61, 0.22);
-  border-radius: 12px;
-  font: inherit;
-}
-
-textarea {
-  min-height: 250px;
-  line-height: 1.55;
-  resize: vertical;
-}
-
-.editor-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.primary-button,
-.secondary-button {
-  min-height: 46px;
-  padding: 0 18px;
-  border-radius: 12px;
-  font: inherit;
-  font-size: 14px;
-  font-weight: 750;
-  cursor: pointer;
-}
-
-.primary-button {
-  color: var(--navy);
-  background: var(--green-light);
-  border: 1px solid var(--green-light);
-}
-
-.secondary-button {
-  color: var(--ink);
-  background: transparent;
-  border: 1px solid rgba(24, 46, 61, 0.22);
-}
-
-.form-message {
-  min-height: 26px;
-  margin: 14px 0 0;
-  color: #2c713d;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.form-message.is-error {
-  color: #a33939;
-}
-
-.storage-note {
-  margin: 22px 0 0;
-  padding-top: 18px;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
-  font-size: 13px;
-}
-
-.login-page {
-  min-height: 100svh;
-  background: var(--navy);
-}
-
-.login-main {
-  display: grid;
-  min-height: 100svh;
-  place-items: center;
-  padding: 130px 24px 50px;
-}
-
-.login-card {
-  width: min(100%, 510px);
-  padding: clamp(30px, 6vw, 52px);
-  background: var(--paper);
-  border: 1px solid rgba(244, 243, 235, 0.3);
-  border-radius: 24px;
-  box-shadow: 0 30px 90px rgba(4, 18, 27, 0.3);
-}
-
-.login-card h1 {
-  margin-bottom: 18px;
-  font-size: clamp(46px, 8vw, 68px);
-}
-
-.login-intro {
-  margin-bottom: 30px;
-  color: var(--muted);
-}
-
-.login-form .primary-button {
-  width: 100%;
-  min-height: 52px;
-}
-
 footer {
   display: flex;
   width: min(calc(100% - 48px), var(--max-width));
@@ -578,8 +450,7 @@ footer p {
     min-height: 78px;
   }
 
-  .header-actions > span,
-  .detail-page .header-actions .header-link:first-child {
+  .header-actions > span {
     display: none;
   }
 
@@ -619,8 +490,7 @@ footer p {
     padding: 48px 20px 78px;
   }
 
-  .content-panel,
-  .editor-panel {
+  .content-panel {
     padding: 26px 22px;
   }
 
