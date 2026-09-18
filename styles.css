@@ -463,6 +463,35 @@ h1 em {
   border-radius: 0 12px 12px 0;
 }
 
+.status-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.status-gallery figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.status-gallery figure:first-child {
+  grid-column: 1 / -1;
+}
+
+.status-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.status-gallery figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .prose a {
   color: #2f7f42;
   text-decoration: underline;
@@ -561,6 +590,14 @@ footer p {
 
   .content-panel {
     padding: 26px 22px;
+  }
+
+  .status-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .status-gallery figure:first-child {
+    grid-column: auto;
   }
 
   footer {
