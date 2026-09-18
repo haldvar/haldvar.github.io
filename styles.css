@@ -441,6 +441,28 @@ h1 em {
   margin-bottom: 0;
 }
 
+.status-section + .status-section {
+  margin-top: 38px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.status-section h3 {
+  margin-bottom: 14px;
+  color: var(--ink);
+  font-size: clamp(22px, 2.4vw, 28px);
+  font-weight: 760;
+  letter-spacing: -0.035em;
+}
+
+.status-report .status-media-note {
+  margin: 0;
+  padding: 22px 26px;
+  background: #f1f7f2;
+  border-left: 4px solid #4b9b5e;
+  border-radius: 0 12px 12px 0;
+}
+
 .prose a {
   color: #2f7f42;
   text-decoration: underline;
