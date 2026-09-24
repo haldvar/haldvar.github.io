@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Praksis hos Spring Marketing – utvikling av PlukkeFun for Elefun gjennom praksisprosjektet IS-302 ved Universitetet i Agder."
+      content="Praksis hos Spring Marketing – Halvard Jansens arbeid med PlukkeFun for Elefun gjennom IS-302 ved Universitetet i Agder."
     />
-    <meta name="theme-color" content="#182e3d" />
+    <meta name="theme-color" content="#f5f1e8" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nb_NO" />
     <meta property="og:title" content="Praksis hos Spring Marketing" />
     <meta
       property="og:description"
-      content="Vi utvikler et enklere og mer oversiktlig plukkesystem for lageret hos Elefun."
+      content="Halvard Jansen dokumenterer arbeidet med PlukkeFun for Elefun."
     />
     <meta
       property="og:image"
@@ -23,162 +23,156 @@
     <meta name="twitter:title" content="Praksis hos Spring Marketing" />
     <meta
       name="twitter:description"
-      content="Vi utvikler et enklere og mer oversiktlig plukkesystem for lageret hos Elefun."
+      content="Halvard Jansen dokumenterer arbeidet med PlukkeFun for Elefun."
     />
     <meta
       name="twitter:image"
       content="https://haldvar.github.io/assets/og-spring.png"
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="assets/barlow-condensed-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Praksis hos Spring Marketing</title>
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#innhold">Hopp til innhold</a>
 
     <header class="site-header">
       <a class="brand" href="#topp" aria-label="Spring Marketing – til toppen">
-        <span class="brand-mark" aria-hidden="true">P</span>
-        <span>Spring<strong>Marketing</strong></span>
+        <img src="assets/spring-logo-primary.png" alt="Spring Marketing" width="776" height="312" />
       </a>
-      <div class="header-actions">
-        <span>IS-302 · UiA</span>
-      </div>
+      <nav class="header-actions" aria-label="Hovednavigasjon">
+        <a href="#topp">Forside</a>
+        <a href="oppgavebeskrivelse.html">Prosjektet</a>
+        <a href="prosjektdagbok.html">Dagbok</a>
+        <a href="om-meg.html">Om studenten</a>
+      </nav>
     </header>
 
     <main id="innhold">
       <section class="intro" id="topp">
         <div class="intro-inner">
-          <p class="eyebrow">Praksisprosjekt · 2026</p>
-          <h1>Praksis hos <em>Spring Marketing</em></h1>
-          <span class="accent-line" aria-hidden="true"></span>
-
-          <div class="intro-copy">
-            <p class="lead">
-              Disse sidene dokumenterer arbeidet mitt hos Spring Marketing
-              gjennom praksisprosjektet IS-302 ved Universitetet i Agder.
-            </p>
-            <p>
-              Oppgaven er å bistå i diverse utviklingsprosjekter. Jeg skal blant
-              annet hjelpe til med å utvikle <strong>PlukkeFun</strong> – en
-              løsning som skal gi lageransatte hos Elefun en tydelig arbeidsflyt
-              fra skanning av ordre til ferdig plukk, og støtte håndtering av
-              avvik underveis.
-            </p>
-            <p>
-              Arbeidet omfatter kartlegging av behov, utforming av
-              brukergrensesnitt og utvikling av frontend og backend. Løsningen
-              testes og forbedres løpende i samarbeid med brukerne.
-            </p>
+          <p class="eyebrow">IS-302 · Universitetet i Agder · 2026</p>
+          <h1>Praksis hos<br /><em>Spring Marketing.</em></h1>
+          <p class="intro-deck">
+            Jeg utvikler PlukkeFun, en løsning som skal gjøre ordreplukking hos
+            Elefun enklere og mer oversiktlig.
+          </p>
+          <div class="intro-meta">
+            <span>Halvard Jansen</span>
+            <a href="#prosjektet"
+              >Se prosjektet <span aria-hidden="true">↓</span></a
+            >
           </div>
+        </div>
+      </section>
+
+      <section
+        class="feature feature-light"
+        id="prosjektet"
+        aria-labelledby="prosjekt-tittel"
+      >
+        <div class="feature-copy">
+          <p class="feature-kicker">01 / Prosjektet</p>
+          <h2 id="prosjekt-tittel">Fra skannet ordre til ferdig plukk.</h2>
+          <p>
+            PlukkeFun skal gi lageransatte en tydelig arbeidsflyt og gjøre det
+            lettere å håndtere avvik underveis. Jeg bidrar med utforming og
+            utvikling av løsningen i praksisperioden.
+          </p>
+          <a class="button-link" href="oppgavebeskrivelse.html">
+            Les om oppgaven <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="feature-media">
+          <img
+            src="assets/spring-kontor-2.jpg"
+            alt="Utviklingsarbeid ved en pult med flere skjermer"
+            width="1280"
+            height="960"
+          />
+          <span class="media-caption">Fra kontoret hos Spring Marketing</span>
+        </div>
+      </section>
+
+      <section class="feature feature-dark" aria-labelledby="dagbok-tittel">
+        <div class="feature-media">
+          <img
+            src="assets/spring-kontor-1.jpg"
+            alt="En person ved arbeidsplassen på kontoret"
+            width="1280"
+            height="960"
+            loading="lazy"
+          />
+          <span class="media-caption">Praksisperioden · 2026</span>
+        </div>
+        <div class="feature-copy">
+          <p class="feature-kicker">02 / Prosjektdagbok</p>
+          <h2 id="dagbok-tittel">Arbeidet, uke for uke.</h2>
+          <p>
+            Dagboken viser hvordan prosjektet utvikler seg, hvilke valg jeg tar,
+            og hva jeg lærer mens jeg jobber med PlukkeFun.
+          </p>
+          <a class="button-link button-link-light" href="prosjektdagbok.html">
+            Åpne dagboken <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
       <section class="overview" aria-labelledby="oversikt-tittel">
         <div class="overview-inner">
           <div class="section-heading">
-            <p class="eyebrow dark">Innhold</p>
-            <h2 id="oversikt-tittel">Prosjektet, samlet på ett sted.</h2>
+            <p class="eyebrow">Utforsk nettstedet</p>
+            <h2 id="oversikt-tittel">Resten av praksisarbeidet.</h2>
           </div>
-
-          <div class="card-grid">
-            <a class="card" href="oppgavebeskrivelse.html">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32">
-                  <path d="M9 5h9l5 5v17H9z" />
-                  <path d="M18 5v6h5M12.5 17h7M12.5 21h7" />
-                </svg>
-              </div>
-              <h3>Oppgavebeskrivelse</h3>
-              <span class="card-line" aria-hidden="true"></span>
-              <p>Hva prosjektet går ut på</p>
-              <span class="card-arrow" aria-hidden="true">→</span>
+          <nav class="page-index" aria-label="Flere sider">
+            <a href="om-meg.html">
+              <span class="index-number">03</span>
+              <span class="index-title">Om studenten</span>
+              <span class="index-description">Bakgrunn og kontakt</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
             </a>
-
-            <a class="card" href="prosjektdagbok.html">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32">
-                  <path d="M7 7h18v20H7zM12 7v20" />
-                  <path d="M16 12h5M16 17h5M16 22h4" />
-                </svg>
-              </div>
-              <h3>Prosjektdagbok</h3>
-              <span class="card-line" aria-hidden="true"></span>
-              <p>Ukentlig logg over arbeidet</p>
-              <span class="card-arrow" aria-hidden="true">→</span>
+            <a href="praksisstedet.html">
+              <span class="index-number">04</span>
+              <span class="index-title">Praksisstedet</span>
+              <span class="index-description">Om Spring Marketing</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
             </a>
-
-            <a class="card" href="om-meg.html">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32">
-                  <circle cx="16" cy="11" r="5" />
-                  <path d="M7 27c.5-6 4-9 9-9s8.5 3 9 9" />
-                </svg>
-              </div>
-              <h3>Om studenten</h3>
-              <span class="card-line" aria-hidden="true"></span>
-              <p>Student og kontaktinfo</p>
-              <span class="card-arrow" aria-hidden="true">→</span>
+            <a href="status-1.html">
+              <span class="index-number">05</span>
+              <span class="index-title">Status 1</span>
+              <span class="index-description">Første statusrapport</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
             </a>
-
-            <a class="card" href="praksisstedet.html">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32">
-                  <path
-                    d="M6 27V9h12v18M18 14h8v13M10 13h4M10 18h4M10 23h4M22 18h1M22 22h1"
-                  />
-                </svg>
-              </div>
-              <h3>Om Spring</h3>
-              <span class="card-line" aria-hidden="true"></span>
-              <p>Om praksisstedet</p>
-              <span class="card-arrow" aria-hidden="true">→</span>
+            <a href="status-2.html">
+              <span class="index-number">06</span>
+              <span class="index-title">Status 2</span>
+              <span class="index-description">Andre statusrapport</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
             </a>
-
-            <a class="card" href="status-1.html">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32">
-                  <path d="M6 25 13 17l5 4 8-11" />
-                  <path d="M20 10h6v6" />
-                </svg>
-              </div>
-              <h3>Status 1</h3>
-              <span class="card-line" aria-hidden="true"></span>
-              <p>Første statusrapport</p>
-              <span class="card-arrow" aria-hidden="true">→</span>
+            <a href="avsluttende-refleksjon.html">
+              <span class="index-number">07</span>
+              <span class="index-title">Avsluttende refleksjon</span>
+              <span class="index-description">Skrives i november</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
             </a>
-
-            <a class="card" href="status-2.html">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32">
-                  <path d="M8 26V17M16 26V8M24 26V13" />
-                </svg>
-              </div>
-              <h3>Status 2</h3>
-              <span class="card-line" aria-hidden="true"></span>
-              <p>Andre statusrapport</p>
-              <span class="card-arrow" aria-hidden="true">→</span>
-            </a>
-
-            <a class="card" href="avsluttende-refleksjon.html">
-              <div class="icon" aria-hidden="true">
-                <svg viewBox="0 0 32 32">
-                  <path d="m7 23-1 4 4-1L25 11l-3-3zM19 11l3 3" />
-                </svg>
-              </div>
-              <h3>Avsluttende refleksjon</h3>
-              <span class="card-line" aria-hidden="true"></span>
-              <p>Skrives i november</p>
-              <span class="card-arrow" aria-hidden="true">→</span>
-            </a>
-          </div>
+          </nav>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Spring Marketing · UiA praksisprosjekt 2026</p>
-      <p>Studentarbeid – ikke en offisiell side for Spring Marketing.</p>
+      <img src="assets/spring-logo-white.png" alt="Spring Marketing" width="772" height="308" />
+      <div>
+        <p>Halvard Jansen · UiA praksisprosjekt 2026</p>
+        <p>Studentarbeid – ikke en offisiell side for Spring Marketing.</p>
+      </div>
     </footer>
   </body>
 </html>
