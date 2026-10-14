@@ -575,6 +575,18 @@ a:focus-visible {
   font-size: 14px;
 }
 
+.status-video {
+  margin: 34px 0 0;
+}
+
+.status-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--ink);
+  border-radius: 12px;
+}
+
 footer {
   display: flex;
   min-height: 130px;

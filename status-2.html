@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Andre statusrapport for praksisprosjektet PlukkeFun."
+      content="Status 2 om arbeidet med PlukkeFun etter tilbakemeldinger fra Elefun."
     />
     <meta name="theme-color" content="#f5f1e8" />
     <meta
@@ -14,7 +14,7 @@
     />
     <meta
       property="og:description"
-      content="Andre statusrapport fra praksisprosjektet."
+      content="Arbeidsoppgaver, utfordringer og demonstrasjon av PlukkeFun-prototypen."
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -36,15 +36,129 @@
         <div class="page-shell">
           <p class="eyebrow">Praksisprosjekt · IS-302</p>
           <h1>Status 2</h1>
-          <p class="page-lead">Andre statusrapport fra praksisperioden.</p>
+          <p class="page-lead">
+            Arbeidet med PlukkeFun siden første status. Oppdatert 14. oktober
+            2026.
+          </p>
         </div>
       </section>
       <section class="page-content">
         <div class="page-shell">
           <article class="content-panel">
-            <h2>Status 2</h2>
-            <div class="prose">
-              <p>Kommer.</p>
+            <h2>Siden første status</h2>
+            <div class="prose status-report">
+              <p>
+                I <a href="status-1.html">Status 1</a> beskrev jeg oppstarten,
+                arbeidet med plukkeflyten og lagring av en aktiv plukkeøkt.
+                Etter dette har jeg jobbet videre med frontend i PlukkeFun,
+                blant annet på bakgrunn av tilbakemeldinger fra Elefun.
+              </p>
+
+              <section class="status-section" aria-labelledby="status2-oppgaver">
+                <h3 id="status2-oppgaver">Arbeidsoppgavene mine</h3>
+                <p>
+                  Jeg har justert plukkeskjermen slik at produktinformasjon,
+                  lokasjon, tralleplass og antall er lettere å lese mens man
+                  arbeider. Jeg har også gjort overgangen mellom skanning av
+                  varer og bekreftelse av tralleplass enklere å følge.
+                </p>
+                <p>
+                  En annen oppgave har vært å forbedre håndteringen av avvik og
+                  kommentarer. Et registrert avvik eller en kommentar kan nå
+                  åpnes igjen med de tidligere opplysningene på plass, slik at
+                  brukeren kan rette dem. Jeg har dessuten sperret fjerning av
+                  en ordre når varer allerede er telt. Sperren ligger både i
+                  grensesnittet og i logikken for plukkeøkten.
+                </p>
+              </section>
+
+              <section class="status-section" aria-labelledby="status2-utfordringer">
+                <h3 id="status2-utfordringer">Utfordringer og erfaringer</h3>
+                <p>
+                  Det mest krevende i denne fasen har vært å få det brukeren ser
+                  til å stemme med tilstanden i en aktiv plukkeøkt. Når noen
+                  endrer et avvik midt i arbeidet, må de gamle verdiene vises
+                  riktig og lagres uten at annen informasjon går tapt. På
+                  samme måte må en påbegynt ordre beskyttes selv om en handling
+                  skulle bli utløst på en annen måte enn gjennom knappen på
+                  skjermen.
+                </p>
+                <p>
+                  Tilbakemeldingene fra Elefun har gjort det lettere å vurdere
+                  løsningene opp mot den faktiske arbeidssituasjonen. I et
+                  lager må informasjon kunne oppfattes raskt, og handlingene
+                  bør fungere med skanner og store treffområder. Det har vært
+                  spennende å se hvor mye små justeringer i flyten betyr.
+                </p>
+              </section>
+
+              <section class="status-section" aria-labelledby="status2-videre">
+                <h3 id="status2-videre">Hvor prosjektet står nå</h3>
+                <p>
+                  <a href="https://plukkefun.springmarketing.no/">Den åpne
+                  PlukkeFun-versjonen</a> kan brukes til å demonstrere
+                  arbeidsflyten, men den er fortsatt en prototype. Ordre,
+                  varer, bruker og tralle er testdata. Autentisering og
+                  koblingene til Elefuns faktiske ordre- og lagersystem er ikke
+                  ferdige. Videre arbeid er å teste flyten grundigere med
+                  brukerne og erstatte testdata og midlertidige løsninger med
+                  reelle integrasjoner.
+                </p>
+              </section>
+
+              <section class="status-section" aria-labelledby="status2-medier">
+                <h3 id="status2-medier">Skjermbilder og skjermopptak</h3>
+                <p class="status-media-note">
+                  Bildene og videoen er fra PlukkeFun-demoen 14. oktober 2026.
+                  Navn og tall er testdata.
+                </p>
+                <div class="status-gallery" aria-label="Skjermbilder fra PlukkeFun-prototypen">
+                  <figure>
+                    <img
+                      src="assets/plukkefun-04-plukking.png"
+                      alt="Plukkeskjerm med lokasjon, tralleplass, produkt, antall og plukkerute"
+                      width="1440"
+                      height="900"
+                      loading="lazy"
+                    />
+                    <figcaption>Plukkeskjerm</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="assets/plukkefun-02-trallevalg.png"
+                      alt="Dialog for å velge to ledige plasser i plukktrallen"
+                      width="1440"
+                      height="900"
+                      loading="lazy"
+                    />
+                    <figcaption>Valg av tralleplass</figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="assets/plukkefun-05-avvik.png"
+                      alt="Dialog med valg for avvik og antall varer funnet"
+                      width="1440"
+                      height="900"
+                      loading="lazy"
+                    />
+                    <figcaption>Avviksrapportering</figcaption>
+                  </figure>
+                </div>
+                <figure class="status-video">
+                  <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                    poster="assets/plukkefun-04-plukking.png"
+                    width="1440"
+                    height="900"
+                    aria-label="Skjermopptak av PlukkeFun-demoen"
+                  >
+                    <source src="assets/plukkefun-demo.mp4" type="video/mp4" />
+                    Nettleseren din støtter ikke videoavspilling.
+                  </video>
+                </figure>
+              </section>
             </div>
           </article>
         </div>
