@@ -575,6 +575,16 @@ a:focus-visible {
   font-size: 14px;
 }
 
+.status-gallery--projects figure:first-child {
+  grid-column: auto;
+}
+
+.status-gallery--projects img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top;
+}
+
 .status-video {
   margin: 34px 0 0;
 }
